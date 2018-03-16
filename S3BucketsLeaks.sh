@@ -27,11 +27,11 @@ nc='\033[0m'
 # Welcome
 
 echo -e "\n"
-echo -e "\t${red}##################################${nc}"
-echo -e "\t${red}#${nc}         S3BucketsLeaks         ${red}#${nc}"
-echo -e "\t${red}#${nc}          Zweisamkeit           ${red}#${nc}"
-echo -e "\t${red}#${nc}           Version 1            ${red}#${nc}"
-echo -e "\t${red}##################################${nc}"
+echo -e "\t${red}##############################${nc}"
+echo -e "\t${red}#${nc}       S3BucketsLeaks       ${red}#${nc}"
+echo -e "\t${red}#${nc}        Zweisamkeit         ${red}#${nc}"
+echo -e "\t${red}#${nc}         Version 1          ${red}#${nc}"
+echo -e "\t${red}##############################${nc}"
 echo -e "\n"
 
 # Parsing arguments
@@ -44,7 +44,7 @@ key="$1"
 
 case $key in
 	-h|--help)
-	echo -e "Usage: $scriptname -b bucketname [-p profile_name]\n\tRecon: [-a (all recon options) -l (list perm) -w (write perm) --aclb (list Bucket ACL perm) -r (read objetcs perm) --aclo (list objects ACL perm)]\n\tExploit: [ -u filepath1,filepath2... (upload) --rm filepath1,filepath2... (remove) -d filepath1,filepath2... (download)"
+	echo -e "Usage: $scriptname -b bucketname [-p profile_name]\n\n\tRecon: [-a (all recon options) -l (list perm) -w (write perm) --aclb (list Bucket ACL perm) -r (read objetcs perm) --aclo (list objects ACL perm)]\n\n\tExploit: [-u filepath1,filepath2... (upload) --rm filepath1,filepath2... (remove) -d filepath1,filepath2... (download)]\n"
 	exit 1
 	;;
 	-b|--bucket)
