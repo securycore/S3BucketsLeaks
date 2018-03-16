@@ -28,7 +28,7 @@ nc='\033[0m'
 
 echo -e "\n"
 echo -e "\t${red}##################################${nc}"
-echo -e "\t${red}#${nc}      AWSBucketLeakToolKit      ${red}#${nc}"
+echo -e "\t${red}#${nc}         S3BucketLeaks          ${red}#${nc}"
 echo -e "\t${red}#${nc}          Zweisamkeit           ${red}#${nc}"
 echo -e "\t${red}#${nc}           Version 1            ${red}#${nc}"
 echo -e "\t${red}##################################${nc}"
