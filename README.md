@@ -36,6 +36,5 @@ pip install awscli
 ## Improvemts
 
 * Remove test: allow to quit ;
-* Check if the user had configured an AWS account (or he will see all close) ;
-* Check if it is possible to write ACL  on bucket and objetcts (put-bucket-acl & put-object-acl);
+* Check if it is possible to write ACL on bucket and objetcts (put-bucket-acl & put-object-acl);
 * Allow to select keylist to read only intersting files.
