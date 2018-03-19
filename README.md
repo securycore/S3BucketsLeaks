@@ -15,24 +15,25 @@ pip install awscli
 ```
 ## Options
 
-* -b bucketname ;
-* -p profileName (to perform the requests with an authenticated account (see [the doc](https://docs.aws.amazon.com/en_us/cli/latest/userguide/cli-chap-getting-started.html#config-settings-and-precedence)) (optionnal).
-    
-#### Recon :
+	-b bucketname [-p aws_profile_name]
 
-* -a (to run all recon options) (optionnal) ;
-* -l (to check if everyone can list the bucket content) (optionnal) ;
-* -w (to check if everyone can upload/delete the bucket content) (optionnal) ;
-* --aclb (to check if everyone can read the bucket ACL) (optionnal) ; 
-* -r (to check if files listed with -l are readable) (optionnal, can be very consuming, you should use -d (see exploitation) to select intersting files only) ;
-* --aclo (to check if everyone can read the objects ACL) (optionnal, idem).
-    
-#### Exploitation :
-    
-* -d filepath1,filepath2... (to download a file from the bucket) ;
-* -u filepath1,filepath2... (to upload a file in the bucket) ;
-* --rm filepath1,filepath2... (to remove a file in the bucket).
-        
+	Reconnaissance:
+
+		-a all recon options
+
+		-l listing bucket objects permission
+		-w write objects in the bucket permission
+		--aclb listing the bucket ACL permission
+		-r reading the bucket objects permission
+		--aclo listing the bucket objects ACL permission
+
+	Exploitation: 
+
+		-u filepath1,filepath2... upload one or more files in the bucket
+		--rm filepath1,filepath2... remove one or more files from the bucket 
+		-d filepath1,filepath2... download one or more files from the bucket
+
+
 ## Improvemts
 
 * Remove test: allow to quit ;
