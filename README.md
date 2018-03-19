@@ -16,7 +16,7 @@ pip install awscli
 ## Options
 
 * -b bucketname ;
-* -p profileName (to perform the requests with an authenticated account) (optionnal).
+* -p profileName (to perform the requests with an authenticated account (see [the doc](https://docs.aws.amazon.com/en_us/cli/latest/userguide/cli-chap-getting-started.html#config-settings-and-precedence)) (optionnal).
     
 #### Recon :
 
