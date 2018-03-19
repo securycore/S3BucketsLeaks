@@ -10,7 +10,7 @@
 command -v aws 2>/dev/null 1>&2
 if [ $? -eq 1 ]
 then
-	 echo "awscli is required. Please install it using the following command: pip install awscli. Aborting"
+	echo "awscli is required. Please install it using the following command: pip install awscli. Aborting"
 	exit 1;
 fi
 
@@ -44,7 +44,7 @@ key="$1"
 
 case $key in
 	-h|--help)
-	echo -e "Usage: $scriptname -b bucketname [-p profile_name]\n\n\tRecon: [-a (all recon options) -l (list perm) -w (write perm) --aclb (list Bucket ACL perm) -r (read objetcs perm) --aclo (list objects ACL perm)]\n\n\tExploit: [-u filepath1,filepath2... (upload) --rm filepath1,filepath2... (remove) -d filepath1,filepath2... (download)]\n"
+	echo -e "Usage: $scriptname -b bucketname [-p aws_profile_name]\n\n\tReconnaissance:\n\n\t\t-a all recon options\n\n\t\t-l listing bucket objects permission\n\t\t-w write objects in the bucket permission\n\t\t--aclb listing the bucket ACL permission\n\t\t-r reading the bucket objects permission\n\t\t--aclo listing the bucket objects ACL permission\n\n\tExploitation: \n\n\t\t-u filepath1,filepath2... upload one or more files in the bucket\n\t\t--rm filepath1,filepath2... remove one or more files from the bucket \n\t\t-d filepath1,filepath2... download one or more files from the bucket\n"
 	exit 1
 	;;
 	-b|--bucket)
