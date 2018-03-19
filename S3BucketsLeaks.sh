@@ -130,7 +130,7 @@ fi
 
 # Output repository
 
-output_path=./${bucket}_AWSBucketLeakToolKit
+output_path=./${bucket}_S3BucketsLeaks
 
 mkdir -p $output_path
 
